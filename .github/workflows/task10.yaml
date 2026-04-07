@@ -1,0 +1,12 @@
+name: secrets
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  secret:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ secrets.API_KEY  }}"
