@@ -1,0 +1,14 @@
+name: env-variable
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    env:
+      APP: demo
+    steps:
+      - run: echo $APP
