@@ -1,0 +1,13 @@
+name: path-filtering
+
+on:
+  push:
+    paths:
+      - 'src/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Path Based Triggerring"
+        runs: echo "Triggerred src"   
