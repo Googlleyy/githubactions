@@ -2,6 +2,11 @@ name: matrix
 
 on:
   push:
+    branches:
+      - main
+
+jobs:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
